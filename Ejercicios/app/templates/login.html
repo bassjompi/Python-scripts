@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Job List</title>
+
+   
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../static/css/signup.css" rel="stylesheet">
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/signIn.js"></script>
+   
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+		<img src="../static/images/logo.png" alt="accolade_logo" style="width:120px;height:30px;">
+        <h2><b>Job List</b></h2>
+      </div>
+
+      <div class="jumbotron" style="background-color:#003ca6">
+        <h4>Please Sign In!</h4>
+        <form class="form-signin" action="/validateLogin" method="post">
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
+        
+        <button id="btnSignIn" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+      </div>
+
+{% include "footer.html" %}
